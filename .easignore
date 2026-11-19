@@ -1,0 +1,13 @@
+/*
+!/src/
+!/modules/
+!/assets/
+!/package.json
+!/package-lock.json
+!/app.json
+!/eas.json
+!/tsconfig.json
+!/metro.config.js
+!/babel.config.js
+!/eslint.config.js
+!/README.md

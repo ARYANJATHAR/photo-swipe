@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+# Debug files
+*.dSYM/
+*.pch/
+# Android
+/android/.gradle/
+/android/build/
+/android/local.properties
+# Expo
+.expo/ # probably not needed
+# Metro
+.cache/
+# Android build outputs with long paths
+**/.transforms/**
+/**/build/**/
+# Pinia
+/.pinia
+# TypeScript
+**/.tsbuildinfo
+**/.ts
+# Vercel
+.vercel/
+# Environment
+.env*
+# Package lock
+package-lock.json
+# Ignore all Android build artifacts with long paths
+!android/
+!android/app/
+!android/app/src/
+!android/app/google-services.json
+!android/build/outputs/
+!android/app/google-services.json
+

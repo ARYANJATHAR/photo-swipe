@@ -1,0 +1,73 @@
+{
+  "expo": {
+    "name": "Flick",
+    "slug": "photo-swipe",
+    "scheme": "photoswipe",
+    "version": "1.3.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "android": {
+      "package": "com.aryanjathar.photoswipe",
+      "versionCode": 4,
+      "allowBackup": false,
+      "blockedPermissions": [
+        "android.permission.READ_MEDIA_VIDEO",
+        "android.permission.READ_MEDIA_AUDIO",
+        "android.permission.ACCESS_MEDIA_LOCATION",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.SYSTEM_ALERT_WINDOW"
+      ],
+      "permissions": [
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.READ_MEDIA_VISUAL_USER_SELECTED",
+        "android.permission.READ_MEDIA_IMAGES"
+      ]
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Allow Flick to show your photos for keeping or deleting.",
+          "savePhotosPermission": "Allow Flick to delete photos you choose.",
+          "granularPermissions": [
+            "photo"
+          ],
+          "isAccessMediaLocationEnabled": false
+        }
+      ],
+      "expo-sqlite",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/flick-logo.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#F8F4E9"
+        }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "buildArchs": [
+              "arm64-v8a"
+            ],
+            "enableMinifyInReleaseBuilds": true,
+            "enableShrinkResourcesInReleaseBuilds": true,
+            "useLegacyPackaging": true
+          }
+        }
+      ]
+    ],
+    "icon": "./assets/flick-logo.png",
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "b8d7f68f-85c9-4af8-9e1d-fa08a170362c"
+      }
+    },
+    "owner": "aryan00007"
+  }
+}
